@@ -22,8 +22,8 @@ class Child1 extends Component {
       h = 300 - margin.top - margin.bottom;
     var container = d3
       .select(".child1_svg")
-      .attr("width", w + margin.left + margin.right)
-      .attr("height", h + margin.top + margin.bottom)
+      .attr("width", w + 55 + margin.left + margin.right)
+      .attr("height", h + 25 + margin.top + margin.bottom)
       .select(".g_1")
       .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
@@ -65,6 +65,24 @@ class Child1 extends Component {
       })
       .attr("r", 3)
       .style("fill", "69b3a2");
+
+    container
+      .append("text")
+      .attr("class", "x label")
+      .attr("text-anchor", "end")
+      .attr("x", w - 200)
+      .attr("y", h + 45)
+      .text("Total Bill");
+    container
+      .append("text")
+      .attr("class", "y label")
+      .attr("text-anchor", "end")
+      .attr("y", -20)
+      .attr("dy", ".75em")
+      .attr("x", -120)
+
+      .attr("transform", "rotate(-90)")
+      .text("Tips");
   }
   render() {
     return (
