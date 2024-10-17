@@ -64,7 +64,7 @@ class Child1 extends Component {
         return y_scale(d.tip);
       })
       .attr("r", 3)
-      .style("fill", "69b3a2");
+      .style("fill", "green");
 
     container
       .append("text")
