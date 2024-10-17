@@ -91,6 +91,13 @@ class Child2 extends Component {
       .text("Days");
     container
       .append("text")
+      .attr("class", "x label")
+      .attr("text-anchor", "end")
+      .attr("x", w - 125)
+      .attr("y", h - 200)
+      .text("Average Tips per days");
+    container
+      .append("text")
       .attr("class", "y label")
       .attr("text-anchor", "end")
       .attr("y", -45)

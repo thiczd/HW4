@@ -4,12 +4,12 @@
   row-gap: 10px;
 }
 .child1 {
-  border: 1px solid red;
-  padding: 15px;
+  border: 1px solid black;
+  padding: 5px;
   height: 400px;
 }
 .child2 {
-  border: 1px solid red;
-  padding: 15px;
+  border: 1px solid black;
+  padding: 5px;
   height: 400px;
 }

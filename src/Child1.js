@@ -17,7 +17,7 @@ class Child1 extends Component {
 
     var data = this.props.data1;
 
-    var margin = { top: 10, right: 10, bottom: 30, left: 20 },
+    var margin = { top: 40, right: 10, bottom: 30, left: 20 },
       w = 500 - margin.left - margin.right,
       h = 300 - margin.top - margin.bottom;
     var container = d3
@@ -73,6 +73,13 @@ class Child1 extends Component {
       .attr("x", w - 200)
       .attr("y", h + 45)
       .text("Total Bill");
+    container
+      .append("text")
+      .attr("class", "x label")
+      .attr("text-anchor", "end")
+      .attr("x", w - 170)
+      .attr("y", h - 250)
+      .text("Total Bill vs Tips");
     container
       .append("text")
       .attr("class", "y label")
